@@ -1,0 +1,1 @@
+var Dream = Backbone.Model.extend({});
