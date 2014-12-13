@@ -1,6 +1,45 @@
 
-  <div class="story">Story Goes Here</div>
-  <div class="thought"><%= @thought %></div>
-  <div class="dream"><%= @dream %></div>
+  <div id="page-content">
+  	
+  	<div id="slides-container">
+  		<div id="slides"
+  					data-0="transform: translate(0%,0%)"
+  					data-50p=""
+						data-150p="transform: translate(0%,-50%)"
+						data-200p=""
+						data-300p="transform: translate(-50%,-50%)"
+						data-350p=""
+						data-450p="transform: translate(-50%,0%)"
+						data-500p=""
+  					>
+  			<div id="slide-1" class="slide">	
+  			</div>
+  		  <div id="slide-2" class="slide">
+  		  	<div class="story caption">
+  		  	</div>
+  		  </div>
+  		  <div id="slide-3" class="slide">
+  		  	<div class="thought caption">
+  		  		<%= @thought %>
+  		  	</div>
+  		  </div>
+  		  <div id="slide-4" class="slide">
+  		  	<div class="dream caption">
+  		  		<%= @dream %>
+  		  	</div>
+  		  </div>
+  		</div>
+  	</div>
 
-  
+  	<div id="helper">
+  		<div class="marker red"></div>
+  		<div class="marker green"></div>
+  		<div class="marker blue"></div>
+  		<div class="marker yellow"></div>
+  	</div>
+
+    <script type="text/javascript">
+    var s = skrollr.init();
+    </script>
+
+  </div>

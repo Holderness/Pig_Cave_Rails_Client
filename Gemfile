@@ -40,3 +40,4 @@ gem 'spring',        group: :development
 
 gem 'pry'
 gem 'httparty'
+gem 'skrollr-rails'

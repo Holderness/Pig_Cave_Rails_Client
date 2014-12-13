@@ -1,10 +1,10 @@
 
 
-
 var story = new StoryList();
 var storyPainter;
 var thought = new ThoughtList();
 var thoughtPainter;
+
 
 $(function(){
 
@@ -33,14 +33,15 @@ $(function(){
 			type: 'get',
 			data: {story: rs},
 			success: function(data){
-				// thought = $(data).filter('.thought')[0]
-				// $('.thought').append(thought)
-				dream = $(data).filter('.dream')[0]
-				$('.dream').append(dream)
+						thought = $.text($(data).find('.thought')[0])
+						$('.thought').text(thought)
+						dream = $.text($(data).find('.dream')[0])
+						$('.dream').text(dream)
 				console.log("Yup");
 			}
 		})
-	}).done(function(){
+	})
+	.done(function(){
 		$('body').click(function(){
 		story.fetch({reset: true}).done(function(){
 				$.ajax({
@@ -48,18 +49,37 @@ $(function(){
 					type: 'get',
 					data: {story: rs},
 					success: function(data){
-						thought = $.text($(data).filter('.thought')[0])
+						thought = $.text($(data).find('.thought')[0])
 						$('.thought').text(thought)
-						dream = $.text($(data).filter('.dream')[0])
+						dream = $.text($(data).find('.dream')[0])
 						$('.dream').text(dream)
-						console.log("Yup");
+						console.log("clickity-click");
 					}
 				})
 			})
 		})
 	})
 
-
+  $(document).scroll(function(){
+    if(document.documentElement.clientHeight + 
+    	$(document).scrollTop() >= document.body.offsetHeight ){
+    	$(document).scrollTop(0)
+	    story.fetch({reset: true}).done(function(){
+		    $.ajax({
+			    url: "/",
+			    type: 'get',
+		  	  data: {story: rs},
+		  	  success: function(data){
+				  	thought = $.text($(data).find('.thought')[0])
+				  	$('.thought').text(thought)
+				  	dream = $.text($(data).find('.dream')[0])
+				  	$('.dream').text(dream)
+				  console.log("8P");
+			    }
+		    })
+	    })
+    };
+  });
 
 });
 

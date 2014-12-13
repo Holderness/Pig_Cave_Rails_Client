@@ -1,1 +1,105 @@
-style.css
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+#slides-container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#slides {
+	width: 200%;
+	height: 200%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 50%;
+}
+
+#slide-1 {
+	background-color: lightblue;
+}
+
+#slide-2 {
+	background-color: cornsilk;
+	-ms-transform: translate(0,100%);
+  -webkit-transform: translate(0,100%);
+  transform: translate(0,100%);
+}
+
+#slide-3 {
+	background-color: lightgreen;
+	-ms-transform: translate(100%,100%);
+  -webkit-transform: translate(100%,100%);
+  transform: translate(100%,100%);
+}
+
+#slide-4 {
+	background-color: pink;
+	-ms-transform: translate(100%,0);
+  -webkit-transform: translate(100%,0);
+  transform: translate(100%,0);
+}
+
+.caption {
+	position: absolute;
+	bottom: 50%;
+	right: 50%;
+}
+
+#slide-2 .caption {
+	text-align: center;
+/*	bottom: 50%;
+	right: 50%;*/
+
+}
+
+#slide-3 .caption {
+	right: 13%;
+	width: 350px;
+}
+
+#slide-4 .caption {
+	left: 5%;
+	right: auto;
+  bottom: 30%;
+  width: 450px;
+}
+
+#helper {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 600%;
+}
+
+.marker {
+	height: 25%;
+	width: 100%;
+}
+
+.red {
+	background-color: red;
+}
+
+.green {
+	background-color: green;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.yellow {
+	background-color: yellow;
+}
+

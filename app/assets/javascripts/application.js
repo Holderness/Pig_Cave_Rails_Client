@@ -15,6 +15,9 @@
 //= require underscore
 //= require backbone
 //= require turbolinks
+//= require skrollr
+//= require skrollr.ie
+//= require skrollr.menu
 //= require_tree ./models/.
 //= require_tree ./collections/.
 //= require_tree ./views/.
