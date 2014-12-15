@@ -4,30 +4,84 @@
   	<div id="slides-container">
   		<div id="slides"
   					data-0="transform: translate(0%,0%)"
-  					data-50p=""
-						data-150p="transform: translate(0%,-50%)"
-						data-200p=""
-						data-300p="transform: translate(-50%,-50%)"
-						data-350p=""
-						data-450p="transform: translate(-50%,0%)"
-						data-500p=""
+  					data-300p=""
+						data-400p="transform: translate(0%,-50%)"
+						data-1400p=""
+						data-1500p="transform: translate(-50%,-50%)"
+						data-1800p=""
+						data-1900p="transform: translate(-50%,0%)"
+						data-2200p=""
   					>
-  			<div id="slide-1" class="slide">	
+
+  			<div id="slide-1" class="slide">
+
+  				<div id="sun" data-start="transform:rotate(0deg);transform-origin:center;left:75%;top:120%" data-2000-start="transform:rotate(360deg);left:-5%; top:-10%"></div> 
+
+  				<div id="clouds-1" data-0="background-position:0px 0px;" data-end="background-position:500px -1500px;" class="skrollable skrollable-between" style="background-position: -180.166666666667px -2162px;"></div>
+  				<div id="clouds-2" data-0="background-position:0px 0px;" data-end="background-position:500px -2000px;" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
+<!--    				<div id="clouds-3" data-0="background-position:0px 0px;" data-end="background-position:-500px -10000px;" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div> -->
+
+
+  				<div id="main-cloud"></div>
+  				<div id="pig-cloud"></div>
+  				<div id="about-container">About
+						<div id="about"></div>
+  				</div>	
   			</div>
+
   		  <div id="slide-2" class="slide">
-  		  	<div class="story caption">
+
+  		  	<div id="trees2" data-300p="background-position:500px 100px" data-400p="background-position:0px 0px;" data-1300p="background-position:0px 0px" data-1500p="background-position:500px 100px;"></div>
+  		  	<div id="trees" data-300p="background-position:-900px 200px;" data-400p="background-position:0px 0px;" data-1300p="background-position:0px 0px" data-1500p="background-position:-900px 200px;"></div>
+  		  	<div id="fat-owl"></div>
+  		  	<div id="pig-tree" data-300p="background-position:200px 800px;" data-400p="background-position:0px 0px;" data-1300p="background-position:0px 0px" data-1500p="background-position:200px 800px;"></div>
+  		  	<div id="lazers" data-450p="opacity: 0"
+  		  		data-550p="opacity: 1"
+  		  		data-599p="opacity: 0">
   		  	</div>
+  		  	<div class="story caption"></div>
+
   		  </div>
+
   		  <div id="slide-3" class="slide">
   		  	<div class="thought caption">
   		  		<%= @thought %>
   		  	</div>
   		  </div>
+
   		  <div id="slide-4" class="slide">
   		  	<div class="dream caption">
   		  		<%= @dream %>
   		  	</div>
   		  </div>
+  		  <div id="person" 
+  		  		data-300p="
+  		  		  top:282px;
+  		  			left:257px;
+  		  			transform:rotate(0deg);
+  		  			transform-origin:center;
+  		  			opacity: 1;" 
+  		  		data-400p="top:1100px;transform:rotate(-360deg);" 
+  		  		data-599p="top:1100px;"
+  		  		data-700p="top:1000px; opacity: 0"
+  		  		data-801p="transform:rotate(-360deg);transform-origin:center;" 
+  		  		data-900p="transform:rotate(-230deg);" 
+  		  		data-1200p="left:257px"
+  		  		data-1301p="left:1500px;"
+  		  		data-1302p="transform:rotate(0deg);transform-origin:center;"
+  		  		data-1302p="left:1500px;transform:rotate(0deg);">
+  		  </div>
+  		  <div id="lazered"
+  		    	data-599p="top:1100px; opacity: 0"
+  		  		data-700p="top:1000px; opacity: 1"
+  		    	data-801p="transform:rotate(-360deg);transform-origin:center;" 
+  		  		data-900p="transform:rotate(-230deg);" 
+  		  		data-1200p="left:257px"
+  		  		data-1301p="left:1500px;"
+  		  		data-1302p="transform:rotate(0deg);transform-origin:center;">
+  		  </div>
+
+
   		</div>
   	</div>
 
@@ -39,7 +93,41 @@
   	</div>
 
     <script type="text/javascript">
-    var s = skrollr.init();
+    var s = skrollr.init({
+    	easing: {
+    		sin: function(p) {
+    			return (Math.sin(p * Math.PI * 2 - Math.PI/2) + 1) / 2;
+    		},
+    		cos: function(p) {
+    			return (Math.cos(p * Math.PI * 2 - Math.PI/2) + 1) / 2;
+    		},
+    	},
+    	render: function(data) {
+			//Loop
+			if(data.curTop === data.maxTop) {
+				this.setScrollTop(0, true);
+			}
+		  }
+	  });
     </script>
 
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

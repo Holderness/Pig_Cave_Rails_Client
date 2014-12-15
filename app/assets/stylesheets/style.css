@@ -1,7 +1,11 @@
 html, body {
 	width: 100%;
 	height: 100%;
+	font-family: garamond;
 }
+
+
+/*Slides*/
 
 #slides-container {
 	width: 100%;
@@ -26,25 +30,25 @@ html, body {
 }
 
 #slide-1 {
-	background-color: lightblue;
+	background-color: #E1F2F7;
 }
 
 #slide-2 {
-	background-color: cornsilk;
+	background-color: #E1F7F1;
 	-ms-transform: translate(0,100%);
   -webkit-transform: translate(0,100%);
   transform: translate(0,100%);
 }
 
 #slide-3 {
-	background-color: lightgreen;
+	background-color: #E9EAF2;
 	-ms-transform: translate(100%,100%);
   -webkit-transform: translate(100%,100%);
   transform: translate(100%,100%);
 }
 
 #slide-4 {
-	background-color: pink;
+	background-color: #8F92A6;
 	-ms-transform: translate(100%,0);
   -webkit-transform: translate(100%,0);
   transform: translate(100%,0);
@@ -74,6 +78,135 @@ html, body {
   bottom: 30%;
   width: 450px;
 }
+
+/*Templates*/
+
+#about-container {
+	background-color: #F7F7F7;
+	width: 300px;
+	height: 500px;
+	border-radius: 10%;
+	font-size: 50px;
+	float: right;
+	margin-right: 1em;
+	margin-top: 3em;
+	text-align: center;
+	box-shadow: 3px 3px 20px #888888;
+	position: relative;
+}
+
+#sun {
+	width: 210px;
+	height: 180px;
+	left: 50px;
+	top: 50px;
+	position: absolute;
+	background: url("/assets/sun.png");
+}
+
+#main-cloud {
+	width: 285px;
+	height: 173px;
+	position: absolute;
+	top: 450px;
+	left: 184px;
+  background: url("/assets/cloud-main.png");
+}
+
+#person {
+	width: 180px;
+	height: 269px;
+	top: 282px;
+	left: 257px;
+	position: absolute;
+	background: url("/assets/person.png");
+}
+
+#pig-cloud {
+	width: 420px;
+	height: 242px;
+	top: 100px;
+	left:539px;
+	position: absolute;
+	background: url("/assets/pig-cloud.png");
+}
+
+#clouds-1 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: url("/assets/clouds-11.png")
+}
+
+#clouds-2 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: url("/assets/clouds-22.png")
+}
+
+#clouds-3 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: url("/assets/clouds-3.png")
+}
+
+
+/*slide-2*/
+
+#fat-owl {
+	width: 100%;
+	height: 100%;
+	top: 15px;
+	position: absolute;
+  background: url("/assets/fat-owl.png");
+  background-repeat: no-repeat;
+}
+
+#pig-tree {
+  width: 100%;
+	height: 110%;
+	top: -100px;
+	position: absolute;
+  background: url("/assets/pig-tree2.png");
+  background-repeat: no-repeat;
+}
+
+#lazers {
+	width: 100%;
+	height: 118%;
+	top: -242px;
+	left: -64px;
+	position: absolute;
+  background: url("/assets/pig-tree-lazers.png");
+}
+
+#lazered {
+  width: 212px;
+  height: 300px;
+  top: 1100px;
+  left: 257px;
+	position: absolute;
+	background: url("/assets/person-lazered.png");
+}
+
+#trees {
+  width: 100%;
+	height: 110%;
+	position: absolute;
+  background: url("/assets/tree-background.png")
+}
+
+#trees2 {
+  width: 100%;
+	height: 110%;
+	position: absolute;
+  background: url("/assets/tree-background2.png")
+}
+
+
+/*Helpers*/
 
 #helper {
 	position: absolute;
