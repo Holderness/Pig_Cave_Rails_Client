@@ -114,6 +114,16 @@ html, body {
 	background: url("/assets/person.png");
 }
 
+#possessed {
+  width: 180px;
+  height: 269px;
+  top: 1203px;
+  left: 192px;
+	position: absolute;
+	background: url("/assets/possessed.png");
+	background-repeat: no-repeat;
+}
+
 #pig-cloud {
 	width: 420px;
 	height: 242px;
@@ -177,14 +187,7 @@ html, body {
   background-repeat: no-repeat;
 }
 
-#lazered {
-  width: 212px;
-  height: 300px;
-  top: 1100px;
-  left: 257px;
-	position: absolute;
-	background: url("/assets/person-lazered.png");
-}
+
 
 #trees {
   width: 100%;
@@ -206,7 +209,7 @@ html, body {
 
 #slide-3 .caption {
 	top: 195px;
-	right: 299px;
+	left: 727px;
 	width: 365px;
 }
 
@@ -260,13 +263,13 @@ html, body {
   background-repeat: no-repeat;
 }
 
-#face {
+#no-face {
 	width: 100%;
 	height: 100%;
 	top: 161px;
 	left: 0px;
 	position: absolute;
-  background: url("/assets/face.png");
+  background: url("/assets/no-face.png");
   background-repeat: no-repeat;
 }
 
@@ -274,18 +277,38 @@ html, body {
 /*Slide 4*/
 
 #slide-4 .caption {
-	top: 305px;
-	left: 37px;
-  width: 470px;
+	top: 55px;
+	left: 47px;
+  width: 310px;
 }
 
-#tent {
+#bambi {
 	width: 100%;
-	height: 100%;
-	top: 200px;
+	height: 105%;
+	top: -42px;
 	left: 0px;
 	position: absolute;
-  background: url("/assets/tent.png");
+  background: url("/assets/bambi.png");
+  background-repeat: no-repeat;
+}
+
+#campfire {
+	width: 100%;
+	height: 100%;
+	top: 487px;
+	left: 900px;
+	position: absolute;
+  background: url("/assets/campfire.png");
+  background-repeat: no-repeat;
+}
+
+#fat-night-owl {
+	width: 100%;
+	height: 100%;
+	top: 311px;
+	left: 755px;
+	position: absolute;
+  background: url("/assets/fat-night-owl.png");
   background-repeat: no-repeat;
 }
 
