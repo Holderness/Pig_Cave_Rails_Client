@@ -2,8 +2,10 @@
 
 var story = new StoryList();
 var storyPainter;
-var thought = new ThoughtList();
-var thoughtPainter;
+var thoughts = new ThoughtList();
+var thoughtsPainter;
+var dreams = new DreamList();
+var dreamsPainter;
 
 
 $(function(){
@@ -25,8 +27,8 @@ $(function(){
 	// 	el: $('.thought'),
 	// 	collection: thought
 	// });
-
-  thought.fetch({reset: true})
+  dreams.fetch({reset: true})
+  thoughts.fetch({reset: true})
 	story.fetch({reset: true}).done(function(){
 		$.ajax({
 			url: "/",
@@ -60,6 +62,8 @@ $(function(){
 		})
 	})
 
+
+
   $(document).scroll(function(){
     if(document.documentElement.clientHeight + 
     	$(document).scrollTop() >= document.body.offsetHeight ){
@@ -79,6 +83,13 @@ $(function(){
 		    })
 	    })
     };
+  });
+
+  
+  var size = [window.width,window.height];
+  
+  $(window).resize(function(){
+    window.resizeTo(size[0],size[1]);
   });
 
 });

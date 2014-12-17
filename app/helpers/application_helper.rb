@@ -25,7 +25,7 @@ module ApplicationHelper
   'left', 'took', 'take', 'does', 'doesn', 'make', 'made', 'within', 
   'even', 'anything', 'knew', 'thought', 'own', 'really', 'want', 
   'something', 'tell', 'told', 'each', 'came', 'went']
-end
+  end
 
 # def find_story
 # 	story = Story.all.sample.title

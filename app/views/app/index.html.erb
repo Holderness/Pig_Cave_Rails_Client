@@ -1,25 +1,34 @@
 
   <div id="page-content">
-  	
   	<div id="slides-container">
   		<div id="slides"
   					data-0="transform: translate(0%,0%)"
-  					data-300p=""
-						data-400p="transform: translate(0%,-50%)"
-						data-1400p=""
-						data-1500p="transform: translate(-50%,-50%)"
-						data-1800p=""
-						data-1900p="transform: translate(-50%,0%)"
-						data-2200p=""
+  					data-3000=""
+						data-4000="transform: translate(0%,-50%)"
+						data-9000=""
+						data-10000="transform: translate(-50%,-50%)"
+						data-10500=""
+						data-17000="transform: translate(-50%,0%)"
+						data-20000=""
   					>
 
   			<div id="slide-1" class="slide">
 
-  				<div id="sun" data-start="transform:rotate(0deg);transform-origin:center;left:75%;top:120%" data-2000-start="transform:rotate(360deg);left:-5%; top:-10%"></div> 
+  				<div id="sun" 
+            data-start="transform:rotate(0deg);transform-origin:center;left:75%;top:120%" 
+            data-2000="transform:rotate(360deg);left:-10%; top:-20%">
+          </div> 
 
-  				<div id="clouds-1" data-0="background-position:0px 0px;" data-end="background-position:500px -1500px;" class="skrollable skrollable-between" style="background-position: -180.166666666667px -2162px;"></div>
-  				<div id="clouds-2" data-0="background-position:0px 0px;" data-end="background-position:500px -2000px;" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
-<!--    				<div id="clouds-3" data-0="background-position:0px 0px;" data-end="background-position:-500px -10000px;" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div> -->
+  				<div id="clouds-1" 
+            data-0="background-position:0px 0px;" 
+            data-end="background-position:500px -1500px;" 
+            style="background-position: -180.166666666667px -2162px;">
+          </div>
+  				<div id="clouds-2" 
+            data-0="background-position:0px 0px;" 
+            data-end="background-position:500px -2000px;" 
+            style="background-position: 0px 0px;">
+          </div>
 
 
   				<div id="main-cloud"></div>
@@ -29,31 +38,98 @@
   				</div>	
   			</div>
 
-  		  <div id="slide-2" class="slide">
+  		  <div id="slide-2" class="slide"
+           data-3000="top: 0%"
+        >
+        <div id="tree-container">
+          <div id="trees2" 
+            data-3000="background-position:500px 100px" 
+            data-4000="background-position:0px -30px;" 
+            data-6000="background-position:0px -30px;"
+            data-7000="background-position:0px 220px;" 
+            data-9000="background-position:0px 220px;" 
+            data-10000="background-position:500px 200px;"
+            >
+          </div>
+          <div id="trees" 
+            data-3000="background-position:-900px 200px;" 
+            data-4000="background-position:0px 0px;"
+            data-6000="background-position:0px 0px;"
+            data-7000="background-position:0px 150px;"  
+            data-9000="background-position:0px 150px;" 
+            data-10000="background-position:-900px 100px;"
+            >
+          </div>
+        </div>
 
-  		  	<div id="trees2" data-300p="background-position:500px 100px" data-400p="background-position:0px 0px;" data-1300p="background-position:0px 0px" data-1500p="background-position:500px 100px;"></div>
-  		  	<div id="trees" data-300p="background-position:-900px 200px;" data-400p="background-position:0px 0px;" data-1300p="background-position:0px 0px" data-1500p="background-position:-900px 200px;"></div>
-  		  	<div id="pig-tree" data-300p="background-position:200px 800px;" data-400p="background-position:0px 0px;" data-1300p="background-position:0px 0px" data-1500p="background-position:200px 800px;"></div>
-  		  	<div id="fat-owl"></div>
-  		  	<div id="lazers" data-450p="opacity: 0"
-  		  		data-550p="opacity: 1"
-  		  		data-599p="opacity: 0">
+  		  	<div id="pig-tree" 
+            data-3000="background-position:200px 800px;" 
+            data-4000="background-position:0px 0px;"
+            data-6000="background-position:0px 0px;"
+            data-7000="background-position:0px 90px;"   
+            data-9000="background-position:0px 90px" 
+            data-10000="background-position:-500px 200px;"
+            >
+          </div>
+  		  	<div id="fat-owl"
+            data-6000="background-position:0px 0px;"
+            data-7000="background-position:0px 60px;"   
+            data-9000="background-position:0px 60px"
+            data-10000="background-position:-700px 200px;" 
+            >
+          </div>
+  		  	<div id="lazers" 
+            data-4500="opacity: 0"
+  		  		data-5500="opacity: 1"
+  		  		data-5990="opacity: 0">
   		  	</div>
-  		  	<div class="story caption"></div>
+  		  	<div class="story caption"
+            data-6000="top:520px; left:572px"
+            data-7000="top:580px;"
+            data-9170="top:580px; left:572px"
+            data-10000="top:580px; left:1650px"
+            >
+          </div>
 
   		  </div>
 
   		  <div id="slide-3" class="slide">
-  		  	<div id="thought-bubble"></div>
-  		  	<div id="bandido-uno"></div>
-  		  	<div id="bandido-dos"></div>
-  		  	<div id="scuba-pig"></div>
-  		  	<div id="tub"></div>
-  		  	<div id="no-face"></div>
-  		  	<div class="thought caption">
- 
-  		  		<%= @thought %>
-  		  	</div>
+  		  	<div id="thought-bubble"
+            data-9000="opacity: 0"
+            data-10000="opacity: 1">
+          </div>
+  		  	<div id="bandido-uno"
+            data-9000="top: 464px; left: -366.7777px"
+            data-10000="top: 464px; left: 616px"
+          >
+          </div>
+  		  	<div id="bandido-dos"
+            data-9000="top: 700px; left: 1550px"
+            data-10000="top: 473px; left: 1016px"
+          >
+          </div>
+  		  	<div id="scuba-pig"
+            data-9000="top: 478px; left: 40px"
+            data-10000="top: 478px; left: 650px"
+          >
+          </div>
+  		  	<div id="tub"
+            data-9000="top: 0%; left: 120%"
+            data-10000="top: 30%; left: 60%"
+            >
+          </div>
+          <div class="thought caption"
+            data-9000="opacity: 0"
+            data-10000="opacity: 1"
+          >
+            <%= @thought %>
+          </div>
+  		  	<div id="no-face"
+            data-9000="left: 100%"
+            data-10000="left: 0%"
+          >
+          </div>
+
   		  </div>
 
   		  <div id="slide-4" class="slide">
@@ -65,28 +141,29 @@
   		  	</div>
   		  </div>
 
-         <div id="possessed"
-  		    	data-599p="top:1222px; left:192px; opacity: 0"
-  		  		data-700p="top:1100px; opacity: 1"
-  		    	data-801p="transform:rotate(-360deg);transform-origin:bottom;" 
-  		  		data-900p="transform:rotate(-230deg);" 
-  		  		data-1200p="left:192px"
-  		  		data-1301p="left:1500px;"
-  		  		data-1302p="transform:rotate(0deg);transform-origin:center;opacity: 1"
-  		  		data-1303p="opacity: 0">
-  		  </div>
-  		  <div id="person" 
-  		  		data-300p="
-  		  		  top:282px;
-  		  			left:257px;
-  		  			transform:rotate(0deg);
-  		  			transform-origin:center;
-  		  			opacity: 1;" 
-  		  		data-400p="top:1203px;left:149px;transform:rotate(-360deg);" 
-  		  		data-599p="top:1203px;"
-  		  		data-700p="top:1081px; opacity: 0">
-  		  </div>
-
+        <div id="person-container">
+          <div id="possessed"
+           data-5989="opacity: 0"
+           data-6000="top:1150px; left:192px; opacity: 1"
+           data-7000="top:1030px; opacity: 1"
+           data-8000="transform:rotate(-360deg);transform-origin:bottom;" 
+           data-8200="transform:rotate(-230deg);" 
+           data-9000="left:192px"
+           data-10010="left:1500px;">
+          </div>
+          <div id="person" 
+            data-3000="
+             top:282px;
+             left:257px;
+             transform:rotate(0deg);
+             transform-origin:center;
+             opacity: 1;" 
+            data-4000="top:1130px; left:149px;transform:rotate(-360deg); opacity: 1"
+            data-4001="top:1130px" 
+            data-6000="top:1130px;opacity: 1"
+            data-7000="top:1010px; opacity: 0">
+          </div>
+         </div>
 
 
   		</div>
@@ -100,22 +177,28 @@
   	</div>
 
     <script type="text/javascript">
+
+    // window.addEventListener('resize', _.debounce(function() {
+
+    // checkResize = setTimeout(function() {
+    //   debugger
+    //   $('#person').each( function() {
+    //     var $skroll = $(this);
+    //             debugger
+    //     $.each( $skroll.data(), function( key ) {
+    //               debugger
+    //       $skroll.removeAttr( 'data-' + key );
+    //       $skroll.removeData();
+    //               debugger
+    //     });
+    //   });
+    // }, 250);
+
+    // }, 300), true);
+
     var s = skrollr.init({
-    	easing: {
-    		sin: function(p) {
-    			return (Math.sin(p * Math.PI * 2 - Math.PI/2) + 1) / 2;
-    		},
-    		cos: function(p) {
-    			return (Math.cos(p * Math.PI * 2 - Math.PI/2) + 1) / 2;
-    		},
-    	},
-    	render: function(data) {
-			//Loop
-			if(data.curTop === data.maxTop) {
-				this.setScrollTop(0, true);
-			}
-		  }
-	  });
+
+    });
     </script>
 
   </div>

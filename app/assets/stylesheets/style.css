@@ -1,6 +1,6 @@
 html, body {
-	width: 100%;
-	height: 100%;
+	min-width: 100%;
+	min-height: 785px;
 	font-family: garamond;
 }
 
@@ -31,6 +31,7 @@ html, body {
 
 #slide-1 {
 	background-color: #E1F2F7;
+	z-index: 4;
 }
 
 #slide-2 {
@@ -38,6 +39,8 @@ html, body {
 	-ms-transform: translate(0,100%);
   -webkit-transform: translate(0,100%);
   transform: translate(0,100%);
+  overflow-y:hidden;
+  z-index: 3;
 }
 
 #slide-3 {
@@ -45,6 +48,7 @@ html, body {
 	-ms-transform: translate(100%,100%);
   -webkit-transform: translate(100%,100%);
   transform: translate(100%,100%);
+  z-index: 2;
 }
 
 #slide-4 {
@@ -52,6 +56,7 @@ html, body {
 	-ms-transform: translate(100%,0);
   -webkit-transform: translate(100%,0);
   transform: translate(100%,0);
+  z-index: 1;
 }
 
 .caption {
@@ -105,24 +110,15 @@ html, body {
   background: url("/assets/cloud-main.png");
 }
 
-#person {
-	width: 180px;
-	height: 269px;
-	top: 282px;
-	left: 257px;
-	position: absolute;
-	background: url("/assets/person.png");
+
+
+#person-container {
+	width: 50%;
+	height: 100%;
+	position: relative;
+	overflow:hidden;
 }
 
-#possessed {
-  width: 180px;
-  height: 269px;
-  top: 1203px;
-  left: 192px;
-	position: absolute;
-	background: url("/assets/possessed.png");
-	background-repeat: no-repeat;
-}
 
 #pig-cloud {
 	width: 420px;
@@ -157,6 +153,10 @@ html, body {
 
 /*slide-2*/
 
+.story {
+	position: absolute;
+}
+
 #fat-owl {
 	width: 100%;
 	height: 100%;
@@ -179,7 +179,7 @@ html, body {
 
 #lazers {
 	width: 100%;
-	height: 46.8%;
+	height: 48.8%;
 	top: 242px;
 	left: 14px;
 	position: absolute;
@@ -188,12 +188,13 @@ html, body {
 }
 
 
-
 #trees {
   width: 100%;
 	height: 110%;
 	position: absolute;
   background: url("/assets/tree-background.png");
+  background-repeat: repeat-x;
+
 }
 
 #trees2 {
@@ -201,16 +202,36 @@ html, body {
 	height: 110%;
 	position: absolute;
   background: url("/assets/tree-background2.png");
+  background-repeat: repeat-x;
 }
 
 
+#person {
+	width: 180px;
+	height: 269px;
+	position: absolute;
+	display: block;
+	background: url("/assets/person.png");
+	z-index: 5;
+}
+
+#possessed {
+  width: 180px;
+  height: 269px;
+  top: 1203px;
+  left: 192px;
+	position: relative;
+	background: url("/assets/possessed.png");
+	background-repeat: no-repeat;
+	z-index: 5;
+}
 
 /*slide 3*/
 
 #slide-3 .caption {
-	top: 195px;
-	left: 727px;
-	width: 365px;
+	top: 288px;
+	left: 698px;
+	width: 421px;
 }
 
 #tub {
@@ -236,8 +257,8 @@ html, body {
 #thought-bubble {
 	width: 100%;
 	height: 100%;
-	top: 159px;
-	left: 691px;
+	top: 238px;
+	left: 624px;
 	position: absolute;
   background: url("/assets/thought-bubble.png");
   background-repeat: no-repeat;
