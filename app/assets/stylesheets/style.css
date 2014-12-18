@@ -39,7 +39,7 @@ html, body {
 	-ms-transform: translate(0,100%);
   -webkit-transform: translate(0,100%);
   transform: translate(0,100%);
-  overflow-y:hidden;
+  overflow:hidden;
   z-index: 3;
 }
 
@@ -163,18 +163,16 @@ html, body {
 	top: 15px;
 	left: 102px;
 	position: absolute;
-  background: url("/assets/fat-owl.png");
-  background-repeat: no-repeat;
+  background: url("/assets/fat-owl.png") no-repeat;
 }
 
 #pig-tree {
-  width: 83%;
+  width: 100%;
 	height: 115%;
 	top: -100px;
 	left: 225px;
 	position: absolute;
-  background: url("/assets/pig-tree2.png");
-  background-repeat: no-repeat;
+  background: url("/assets/pig-tree2.png") no-repeat;
 }
 
 #lazers {
@@ -183,8 +181,7 @@ html, body {
 	top: 242px;
 	left: 14px;
 	position: absolute;
-  background: url("/assets/pig-tree-lazers.png");
-  background-repeat: no-repeat;
+  background: url("/assets/pig-tree-lazers.png") no-repeat;
 }
 
 
@@ -221,8 +218,7 @@ html, body {
   top: 1203px;
   left: 192px;
 	position: relative;
-	background: url("/assets/possessed.png");
-	background-repeat: no-repeat;
+	background: url("/assets/possessed2.png") no-repeat;
 	z-index: 5;
 }
 
@@ -240,8 +236,7 @@ html, body {
 	top: 254px;
 	left: 818px;
 	position: absolute;
-  background: url("/assets/tub.png");
-  background-repeat: no-repeat;
+  background: url("/assets/tub.png") no-repeat;
 }
 
 #scuba-pig {
@@ -250,8 +245,7 @@ html, body {
 	top: 384px;
 	left: 532px;
 	position: absolute;
-  background: url("/assets/scuba-pig.png");
-  background-repeat: no-repeat;
+  background: url("/assets/scuba-pig.png") no-repeat;
 }
 
 #thought-bubble {
@@ -260,8 +254,7 @@ html, body {
 	top: 238px;
 	left: 624px;
 	position: absolute;
-  background: url("/assets/thought-bubble.png");
-  background-repeat: no-repeat;
+  background: url("/assets/thought-bubble.png") no-repeat;
 }
 
 #bandido-uno {
@@ -270,8 +263,7 @@ html, body {
 	top: 376px;
 	left: 820px;
 	position: absolute;
-  background: url("/assets/bandido1.png");
-  background-repeat: no-repeat;
+  background: url("/assets/bandido1.png") no-repeat;
 }
 
 #bandido-dos {
@@ -280,8 +272,7 @@ html, body {
 	top: 385px;
 	left: 933px;
 	position: absolute;
-  background: url("/assets/bandido2.png");
-  background-repeat: no-repeat;
+  background: url("/assets/bandido2.png") no-repeat;
 }
 
 #no-face {
@@ -290,8 +281,7 @@ html, body {
 	top: 161px;
 	left: 0px;
 	position: absolute;
-  background: url("/assets/no-face.png");
-  background-repeat: no-repeat;
+  background: url("/assets/no-face.png") no-repeat;
 }
 
 #hand	{
@@ -300,8 +290,7 @@ html, body {
 	top: 0px;
 	left: 0px;
 	position: absolute;
-  background: url("/assets/hand.png");
-  background-repeat: no-repeat;
+  background: url("/assets/hand.png") no-repeat;
 }
 
 
@@ -319,8 +308,7 @@ html, body {
 	top: -77px;
 	left: 0px;
 	position: absolute;
-  background: url("/assets/bambi.png");
-  background-repeat: no-repeat;
+  background: url("/assets/bambi.png") no-repeat;
 }
 
 #campfire {
@@ -329,8 +317,7 @@ html, body {
 	top: 487px;
 	left: 815px;
 	position: absolute;
-  background: url("/assets/campfire.png");
-  background-repeat: no-repeat;
+  background: url("/assets/campfire.png") no-repeat;
 }
 
 #fat-night-owl {
@@ -339,8 +326,34 @@ html, body {
 	top: 311px;
 	left: 665px;
 	position: absolute;
-  background: url("/assets/fat-night-owl.png");
-  background-repeat: no-repeat;
+  background: url("/assets/fat-night-owl.png") no-repeat;
+}
+
+#pig-bag1 {
+	width: 100%;
+	height: 100%;
+	top: 387px;
+	left: 1050px;
+	position: absolute;
+  background: url("/assets/pig-bag1.png")no-repeat;
+}
+
+#pig-bag2 {
+	width: 100%;
+	height: 100%;
+	top: 387px;
+	left: 1050px;
+	position: absolute;
+  background: url("/assets/pig-bag2.png") no-repeat;
+}
+
+#fly-pig {
+	width: 100%;
+	height: 100%;
+	top: 100px;
+	left: 600px;
+	position: absolute;
+  background: url("/assets/fly-pig.png") no-repeat;
 }
 
 #stars {
@@ -364,7 +377,6 @@ html, body {
 	height: 110%;
 	position: absolute;
   background: url("/assets/stars2.png");
-
 }
 
 
