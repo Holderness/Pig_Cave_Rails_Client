@@ -158,7 +158,7 @@ html, body {
 }
 
 #fat-owl {
-	width: 100%;
+	width: 66%;
 	height: 100%;
 	top: 15px;
 	left: 102px;
@@ -168,8 +168,8 @@ html, body {
 }
 
 #pig-tree {
-  width: 100%;
-	height: 110%;
+  width: 83%;
+	height: 115%;
 	top: -100px;
 	left: 225px;
 	position: absolute;
@@ -178,7 +178,7 @@ html, body {
 }
 
 #lazers {
-	width: 100%;
+	width: 99%;
 	height: 48.8%;
 	top: 242px;
 	left: 14px;
@@ -286,11 +286,21 @@ html, body {
 
 #no-face {
 	width: 100%;
-	height: 100%;
+	height: 121%;
 	top: 161px;
 	left: 0px;
 	position: absolute;
   background: url("/assets/no-face.png");
+  background-repeat: no-repeat;
+}
+
+#hand	{
+	width: 100%;
+	height: 131%;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+  background: url("/assets/hand.png");
   background-repeat: no-repeat;
 }
 
@@ -305,8 +315,8 @@ html, body {
 
 #bambi {
 	width: 100%;
-	height: 105%;
-	top: -42px;
+	height: 113%;
+	top: -77px;
 	left: 0px;
 	position: absolute;
   background: url("/assets/bambi.png");
@@ -317,7 +327,7 @@ html, body {
 	width: 100%;
 	height: 100%;
 	top: 487px;
-	left: 900px;
+	left: 815px;
 	position: absolute;
   background: url("/assets/campfire.png");
   background-repeat: no-repeat;
@@ -327,11 +337,36 @@ html, body {
 	width: 100%;
 	height: 100%;
 	top: 311px;
-	left: 755px;
+	left: 665px;
 	position: absolute;
   background: url("/assets/fat-night-owl.png");
   background-repeat: no-repeat;
 }
+
+#stars {
+	width: 100%;
+	height: 110%;
+	position: absolute;
+  background: url("/assets/stars.png");
+
+}
+
+#stars1 {
+	width: 100%;
+	height: 110%;
+	position: absolute;
+  background: url("/assets/stars1.png");
+
+}
+
+#stars2 {
+	width: 100%;
+	height: 110%;
+	position: absolute;
+  background: url("/assets/stars2.png");
+
+}
+
 
 /*Helpers*/
 
