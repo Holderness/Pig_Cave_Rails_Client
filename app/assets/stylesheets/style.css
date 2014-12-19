@@ -17,6 +17,32 @@ p {
 }
 
 
+.floating{
+    float: left;
+    -webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating-Pig;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+@-webkit-keyframes Floatingx{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 30px);}
+    to {-webkit-transform: translate(0, 0px);}    
+}
+    
+@-moz-keyframes Floating{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 30px);}
+    to {-moz-transform: translate(0, 0px);}    
+}
+
 
 
 /*Slides*/
@@ -44,12 +70,12 @@ p {
 }
 
 #slide-1 {
-	background-color: #E1F2F7;
+	background-color: #EBF5F7;
 	z-index: 4;
 }
 
 #slide-2 {
-	background-color: #E1F7F1;
+	background-color: #EBF2F0	;
 	-ms-transform: translate(0,100%);
   -webkit-transform: translate(0,100%);
   transform: translate(0,100%);
@@ -58,7 +84,7 @@ p {
 }
 
 #slide-3 {
-	background-color: #E9EAF2;
+	background-color: #F0F0F5;
 	-ms-transform: translate(100%,100%);
   -webkit-transform: translate(100%,100%);
   transform: translate(100%,100%);
@@ -66,10 +92,14 @@ p {
 }
 
 #slide-4 {
-	background-color: #8F92A6;
 	-ms-transform: translate(100%,0);
   -webkit-transform: translate(100%,0);
   transform: translate(100%,0);
+  background-image: linear-gradient(bottom, #F0F0F0 50%, #9597A6 50%);
+  background-image: -o-linear-gradient(bottom, #F0F0F0 50%, #9597A6 50%);
+  background-image: -moz-linear-gradient(bottom, #F0F0F0 50%, #9597A6 50%);
+  background-image: -webkit-linear-gradient(bottom, #F0F0F0 50%, #9597A6 50%);
+  background-image: -ms-linear-gradient(bottom, #F0F0F0 50%, #9597A6 50%);
   z-index: 1;
 }
 
@@ -85,12 +115,11 @@ p {
 	right: auto;
 	top: 520px;
 	left: 572px;
-
 }
 
 
 
-/*Templates*/
+/* Slide 1 */
 
 #about-container {
 	background-color: #F7F7F7;
@@ -108,6 +137,24 @@ p {
 
 #about {
 	margin: 0px 35px 0px 35px ;
+}
+
+#scroll-down-container {
+	background-color: #F7F7F7;
+	width: 200px;
+	height: 50px;
+	border-radius: 10%;
+	font-size: 20px;
+	left: 600px;
+	bottom: 1em;
+	text-align: center;
+	box-shadow: 3px 3px 20px #888888;
+	position: absolute;
+}
+
+#scroll-down {
+  margin: 13px;
+
 }
 
 #sun {
@@ -151,25 +198,25 @@ p {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	background: url("/assets/clouds-11.png")
+	background: url("/assets/clouds-11.png");
 }
 
 #clouds-2 {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	background: url("/assets/clouds-22.png")
+	background: url("/assets/clouds-22.png");
 }
 
 #clouds-3 {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	background: url("/assets/clouds-3.png")
+	background: url("/assets/clouds-3.png");
 }
 
 
-/*slide-2*/
+/* Slide 2*/
 
 .story {
 	position: absolute;
@@ -240,13 +287,60 @@ p {
 	z-index: 5;
 }
 
-/*slide 3*/
+/* Slide 3 */
+
+#b1 {
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+  background: url("/assets/one-third.png") no-repeat;
+}
+
+#b2 {
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+  background: url("/assets/two-third.png") no-repeat;
+}
+
+#b3 {
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+  background: url("/assets/three-third.png") no-repeat;
+}
+
+#background {
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+  background: url("/assets/3background.png") no-repeat;
+}
 
 #slide-3 .caption {
 	top: 288px;
 	left: 698px;
 	width: 421px;
 }
+
+#wing {
+	width: 100%;
+	height: 100%;
+	top: 254px;
+	left: 300px;
+	position: absolute;
+  background: url("/assets/wings.png") no-repeat;
+}
+
+
 
 #tub {
 	width: 100%;
@@ -312,7 +406,27 @@ p {
 }
 
 
-/*Slide 4*/
+/* Slide 4 */
+
+#gradient4 {
+	bottom: 50px;
+	height: 339px;
+	width: 100%;
+	position: fixed;
+		background-image: linear-gradient(bottom, #F0F0F0 10%, #757575 80%);
+	  background-image: -o-linear-gradient(bottom, #F0F0F0 10%, #757575 80%);
+	  background-image: -moz-linear-gradient(bottom, #F0F0F0 10%, #757575 80%);
+	  background-image: -webkit-linear-gradient(bottom, #F0F0F0 10%, #757575 80%);
+	  background-image: -ms-linear-gradient(bottom, #F0F0F0 10%, #757575 80%);
+}
+
+#horizon-line4 {
+	top:316px;
+	height: 100%;
+	width:100%;
+	position: absolute;
+	background: url("/assets/horizon-line.png") no-repeat;
+}
 
 #slide-4 .caption {
 	top: 55px;
@@ -374,9 +488,19 @@ p {
   background: url("/assets/fly-pig.png") no-repeat;
 }
 
+#pig-lazer {
+	width: 100%;
+	height: 100%;
+	top: 114px;
+	left: 878px;
+	opacity: 0;
+	position: absolute;
+  background: url("/assets/pig-lazer2.png") no-repeat;
+}
+
 #stars {
 	width: 100%;
-	height: 110%;
+	height: 50%;
 	position: absolute;
   background: url("/assets/stars.png");
 
@@ -384,7 +508,7 @@ p {
 
 #stars1 {
 	width: 100%;
-	height: 110%;
+	height: 50%;
 	position: absolute;
   background: url("/assets/stars1.png");
 
@@ -392,7 +516,7 @@ p {
 
 #stars2 {
 	width: 100%;
-	height: 110%;
+	height: 50%;
 	position: absolute;
   background: url("/assets/stars2.png");
 }
