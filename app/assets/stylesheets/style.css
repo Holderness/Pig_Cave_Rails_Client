@@ -45,7 +45,11 @@ p {
 
 
 
+
+
 /*Slides*/
+
+
 
 #slides-container {
 	width: 100%;
@@ -119,7 +123,11 @@ p {
 
 
 
+
+
 /* Slide 1 */
+
+
 
 #about-container {
 	background-color: #F7F7F7;
@@ -174,25 +182,6 @@ p {
   background: url("/assets/cloud-main.png");
 }
 
-
-
-#person-container {
-	width: 50%;
-	height: 100%;
-	position: fixed;
-	overflow: hidden;
-	z-index: 4;
-}
-
-#person {
-	width: 180px;
-	height: 269px;
-	position: absolute;
-	display: block;
-	background: url("/assets/person.png");
-	z-index: 5;
-}
-
 #pig-cloud {
 	width: 420px;
 	height: 242px;
@@ -224,7 +213,12 @@ p {
 }
 
 
+
+
+
 /* Slide 2*/
+
+
 
 .story {
 	position: absolute;
@@ -250,7 +244,7 @@ p {
 
 #lazers {
 	width: 99%;
-	height: 48.8%;
+	height: 393px;
 	top: 242px;
 	left: 14px;
 	position: absolute;
@@ -278,17 +272,12 @@ p {
 
 
 
-#possessed {
-  width: 180px;
-  height: 269px;
-  top: 1203px;
-  left: 192px;
-	position: relative;
-	background: url("/assets/possessed2.png") no-repeat;
-	z-index: 5;
-}
+
+
 
 /* Slide 3 */
+
+
 
 #b1 {
 	width: 100%;
@@ -340,8 +329,6 @@ p {
 	position: absolute;
   background: url("/assets/wings.png") no-repeat;
 }
-
-
 
 #tub {
 	width: 100%;
@@ -407,7 +394,13 @@ p {
 }
 
 
+
+
+
+
 /* Slide 4 */
+
+
 
 #gradient4 {
 	top: 388px;
@@ -522,7 +515,48 @@ p {
 }
 
 
+
+
+
+
+/* Person */
+
+
+
+
+#person-container {
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	z-index: 7;
+}
+
+#person {
+	width: 180px;
+	height: 269px;
+	position: relative;
+	display: block;
+	background: url("/assets/person.png");
+	z-index: 7;
+}
+
+#possessed {
+  width: 180px;
+  height: 269px;
+  top: 1203px;
+  left: 192px;
+	position: relative;
+	background: url("/assets/possessed2.png") no-repeat;
+	z-index: 7;
+}
+
+
+
+
 /*Helpers*/
+
+
 
 #helper {
 	position: absolute;
