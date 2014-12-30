@@ -1,6 +1,6 @@
 html, body {
 	min-width: 100%;
-	min-height: 785px;
+	min-height: 100%;
 	font-family: garamond;
 }
 
@@ -154,7 +154,6 @@ p {
 
 #scroll-down {
   margin: 13px;
-
 }
 
 #sun {
@@ -180,10 +179,19 @@ p {
 #person-container {
 	width: 50%;
 	height: 100%;
-	position: relative;
-	overflow:hidden;
+	position: fixed;
+	overflow: hidden;
+	z-index: 4;
 }
 
+#person {
+	width: 180px;
+	height: 269px;
+	position: absolute;
+	display: block;
+	background: url("/assets/person.png");
+	z-index: 5;
+}
 
 #pig-cloud {
 	width: 420px;
@@ -268,14 +276,7 @@ p {
 }
 
 
-#person {
-	width: 180px;
-	height: 269px;
-	position: absolute;
-	display: block;
-	background: url("/assets/person.png");
-	z-index: 5;
-}
+
 
 #possessed {
   width: 180px;
@@ -397,8 +398,8 @@ p {
 }
 
 #hand	{
-	width: 100%;
-	height: 131%;
+	width: 130%;
+	height: 951px;
 	top: 0px;
 	left: 0px;
 	position: absolute;
@@ -409,8 +410,8 @@ p {
 /* Slide 4 */
 
 #gradient4 {
-	bottom: 50px;
-	height: 339px;
+	top: 388px;
+	height: 403px;
 	width: 100%;
 	position: fixed;
 		background-image: linear-gradient(bottom, #F0F0F0 10%, #757575 80%);
@@ -500,15 +501,14 @@ p {
 
 #stars {
 	width: 100%;
-	height: 50%;
+	height: 370px;
 	position: absolute;
   background: url("/assets/stars.png");
-
 }
 
 #stars1 {
 	width: 100%;
-	height: 50%;
+	height: 370px;
 	position: absolute;
   background: url("/assets/stars1.png");
 
@@ -516,7 +516,7 @@ p {
 
 #stars2 {
 	width: 100%;
-	height: 50%;
+	height: 370px;
 	position: absolute;
   background: url("/assets/stars2.png");
 }
