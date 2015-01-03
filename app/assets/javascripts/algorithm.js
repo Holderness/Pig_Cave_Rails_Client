@@ -57,6 +57,10 @@
           thoughtAndWordMatches.push([thought, counter]);
         }
       });
+      if (thoughtAndWordMatches.length === 0) {
+        failSafe = _.sample(thoughtsArray, 1);
+        thoughtAndWordMatches.push(failSafe);
+      }
       orderedByWordMatchNumber = _.pairs(thoughtAndWordMatches.sort(function(a,b){
        return b[1]-a[1];
       }));
