@@ -43,45 +43,53 @@
   };
 
 
-  var matchStoryToThoughts = function matchStoryToThoughts(storyArray, thoughtsArray){
-    var thoughtAndWordMatches = {};
+  var matchStoryToThought = function matchStoryToThoughts(storyArray, thoughtsArray){
+    var thoughtAndWordMatches = [];
     _.each(thoughtsArray, function(thought){
         var counter = 0;
-        var thought_array = thought.toLowerCase().split(/\W+/);
+        var thoughtLowerCase = thought.toLowerCase();
         _.each(storyArray, function(word){
-           if (_.contains(thought_array, word) && (word.length > 2)) {
+           if ((thoughtLowerCase.search(word) > 0) && (word.length > 2)) {
              counter++;
            }
         });
         if (counter > 0){
-          thoughtAndWordMatches[thought] = counter;
+          thoughtAndWordMatches.push([thought, counter]);
         }
       });
-      return thoughtAndWordMatches;
+      orderedByWordMatchNumber = _.pairs(thoughtAndWordMatches.sort(function(a,b){
+       return b[1]-a[1];
+      }));
+      return orderedByWordMatchNumber[0][1][0];
     };
 
-
-//     matchStoryToThought
-
-  // var createWordArray = function createWordArray(storyString, thoughtString)
-
+// // two different ways to get orderedByWordMatchNumber
+// _.pairs(matchStoryToThoughts(sa, ta)).sort(function(a,b){ return b[1]-a[1]})
+// _.sortBy(_.pairs(matchStoryToThoughts(sa, ta)), function(pair){ return pair[1] }).reverse()
 
 
-//     def create_word_array(story_string, thought_string)
-//   story_array = story_string.downcase.split(/\W+/)
-//   thought_array = thought_string.downcase.split(/\W+/)
-//   arr = story_array + thought_array
-//   arr.uniq!
-//   arr.select!{|word| word if word.length > 2}
-//   arr.reject!{|word| word if words_to_reject.include? word}
-//   return arr
-// end
+var createWordArray = function createWordArray(storyArray, thoughtArray){
+  return _.uniq(storyArray.concat(thoughtArray));
+};
+
+// var dreamsArray = _.map(dreams.models, function(dreamModel){
+//   return dreamModel.attributes.dream;
+// });
+
+// var thoughtsArray = _.map(thoughts.models, function(thoughtModel){
+//   return thoughtModel.attributes.title;
+// });
 
 
-ss = "hey doggy where are you I don't know nice doggy fancy doggy love camp"
-sa = stringToArray(ss)
-ta = ["this is a thought I am a thought doggy love camp", "wheres the party at? nice nice know I don't you"]
-matchStoryToThoughts(sa, ta)
-      
+// var matchDreamToWordArray = function MatchDreamToWordArray(wordArray, dreamArray){
+//   var dreamAndWordMatches = [];
 
+// }
+
+
+// ss = "hey doggy where are you I don't know nice doggy fancy doggy love camp"
+// sa = stringToArray(ss)
+// ta = ["this is a thought I am a thought doggy love camp", "wheres the party at? nice nice know I don't you", "fat daddy you're a fat daddy", "doggy fancy love camp hey nice pretty", "no words in here", "comparison for hey doggy where nice doggy fancy lady doggy love doggy"]
+// matchStoryToThought(sa, ta)
+    
 

@@ -13,7 +13,7 @@ $(function(){
 	// function getParams(){
 	//	return {
 	//		story: $('.story').val(),
-	//	  thought: $('.thought').val(),
+	//    thought: $('.thought').val(),
 	//		dream: $('.dream').val()
 	//	}
 	// };
@@ -38,18 +38,30 @@ $(function(){
    });
   });
   story.fetch({reset: true}).done(function(){
-	  $.ajax({
-		  url: "/",
-		  type: 'get',
-		  data: {story: rs},
-	    success: function(data){
-			  thought = $.text($(data).find('.thought')[0]);
-			  $('.thought').text(thought);
-			  dream = $.text($(data).find('.dream')[0]);
-			  $('.dream').text(dream);
-			  console.log("Yup");
-		  }
-	  })
+    $.ajax({
+      url: "/",
+      type: 'get',
+      data: {story: rs},
+      success: function(data){
+        // thought = $.text($(data).find('.thought')[0]);
+        // $('.thought').text(thought);
+        // dream = $.text($(data).find('.dream')[0]);
+        // $('.dream').text(dream);
+        // var dreamsArray = _.map(dreams.models, function(dreamModel){
+        //   return dreamModel.attributes.dream;
+        // });
+        // var thoughtsArray = _.map(thoughts.models, function(thoughtModel){
+        //   return thoughtModel.attributes.title;
+        // });
+        randomStoryArray = stringToArray(rs);
+        thoughtt = matchStoryToThought(randomStoryArray, thoughtsArray);
+        thoughttArray = stringToArray(thoughtt);
+        dreamm = matchStoryToThought(thoughttArray, dreamsArray);
+        $(".thought").text(thoughtt);
+        $(".dream").text(dreamm);
+        console.log("Yup");
+      }
+    });
   })
 .done(function(){
 	$('body').click(function(){
@@ -59,10 +71,16 @@ $(function(){
 				type: 'get',
 				data: {story: rs},
 				success: function(data){
-					thought = $.text($(data).find('.thought')[0]);
-					$('.thought').text(thought);
-					dream = $.text($(data).find('.dream')[0]);
-					$('.dream').text(dream);
+					// thought = $.text($(data).find('.thought')[0]);
+					// $('.thought').text(thought);
+					// dream = $.text($(data).find('.dream')[0]);
+					// $('.dream').text(dream);
+          randomStoryArray = stringToArray(rs);
+          thoughtt = matchStoryToThought(randomStoryArray, thoughtsArray);
+          thoughttArray = stringToArray(thoughtt);
+          dreamm = matchStoryToThought(thoughttArray, dreamsArray);
+					$(".thought").text(thoughtt);
+          $(".dream").text(dreamm);
 					console.log("clickity-click");
 				}
 			});
@@ -73,9 +91,9 @@ $(function(){
 
 
 $(document).scroll(function(){
-	if(document.documentElement.clientHeight + 
-	  $(document).scrollTop() >= document.body.offsetHeight ){
-	  $(document).scrollTop(0)
+  if(document.documentElement.clientHeight +
+    $(document).scrollTop() >= document.body.offsetHeight ){
+    $(document).scrollTop(0);
 	story.fetch({reset: true}).done(function(){
 		$.ajax({
 			url: "/",
